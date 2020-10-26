@@ -4,7 +4,6 @@ import time
 encoding = "utf-8"
 success = "ok\n"
 
-
 class ClientError(Exception):
     pass
 
