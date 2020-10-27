@@ -48,7 +48,7 @@ class ClientServerProtocol(asyncio.Protocol):
                 for value in metrics[metric]:
                     response = response + metric + ' ' + value[1] + ' ' + value[0] + '\n'
 
-        print(response)
+        # print(response)
         return response + '\n'
 
     def put(self, data):
@@ -70,4 +70,4 @@ class ClientServerProtocol(asyncio.Protocol):
         self.transport.write(response.encode('utf-8'))
 
 
-run_server("127.0.0.1", 10003)
+# run_server("127.0.0.1", 10003)
